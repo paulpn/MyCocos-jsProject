@@ -1,0 +1,191 @@
+{
+  "ID": "3e952bba-e12c-4cc7-aa87-da20e6ad3a7e",
+  "Version": "2.2.6.0",
+  "Name": "jianlu",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 4,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shuaka.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 3.6221,
+              "Y": -4.5313
+            },
+            "Scale": {
+              "ScaleX": 0.9324,
+              "ScaleY": 0.629
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0038,
+              "Y": -0.0071
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "VerticalEdge": "BottomEdge",
+            "LeftMargin": 3.6221,
+            "RightMargin": -67.6221,
+            "TopMargin": -379.4687,
+            "BottomMargin": -4.5313,
+            "Tag": 8,
+            "ActionTag": 395501836,
+            "Size": {
+              "X": 1024.0,
+              "Y": 1024.0
+            },
+            "Name": "Sprite_2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "请刷卡进行检录",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 270.4216,
+              "Y": 33.2116
+            },
+            "Scale": {
+              "ScaleX": 3.1015,
+              "ScaleY": 4.0105
+            },
+            "CColor": {
+              "R": 234,
+              "G": 12,
+              "B": 12
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2817,
+              "Y": 0.0519
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 270.4216,
+            "RightMargin": 549.5784,
+            "TopMargin": 586.7884,
+            "BottomMargin": 33.2116,
+            "Tag": 10,
+            "ActionTag": 1366790493,
+            "Size": {
+              "X": 140.0,
+              "Y": 20.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "确认",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 134.5369,
+              "Y": 109.074
+            },
+            "Scale": {
+              "ScaleX": 2.8837,
+              "ScaleY": 2.9002
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1401,
+              "Y": 0.1704
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 111.5369,
+            "RightMargin": 802.4631,
+            "TopMargin": 512.926,
+            "BottomMargin": 91.074,
+            "Tag": 26,
+            "ActionTag": 1346398941,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

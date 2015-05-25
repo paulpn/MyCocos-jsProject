@@ -1,0 +1,508 @@
+{
+  "ID": "5f864f8a-11d9-4b4e-a79e-362dcdac4d78",
+  "Version": "2.2.6.0",
+  "Name": "judgement",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 46,
+        "Children": [
+          {
+            "FontSize": 20,
+            "LabelText": "第   场比赛",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 474.1176,
+              "Y": 558.7719
+            },
+            "Scale": {
+              "ScaleX": 1.7037,
+              "ScaleY": 3.7644
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4939,
+              "Y": 0.8731
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 424.1176,
+            "RightMargin": 435.8824,
+            "TopMargin": 71.2281,
+            "BottomMargin": 548.7719,
+            "Tag": 55,
+            "ActionTag": -781424172,
+            "Size": {
+              "X": 110.0,
+              "Y": 20.0
+            },
+            "Name": "Text_3",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "所在边",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 109.4825,
+              "Y": 464.9719
+            },
+            "Scale": {
+              "ScaleX": 0.9775,
+              "ScaleY": 2.3521
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.114,
+              "Y": 0.7265
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 79.4825,
+            "RightMargin": 820.5175,
+            "TopMargin": 165.0281,
+            "BottomMargin": 454.9719,
+            "Tag": 56,
+            "Children": [
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 225.4755,
+                  "Y": 462.9271
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 3.7579,
+                  "Y": 23.1464
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 225.4755,
+                "RightMargin": -165.4755,
+                "TopMargin": -442.9271,
+                "BottomMargin": 462.9271,
+                "Tag": 16,
+                "ActionTag": 323395320,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "dropdownlist_position",
+                "ctype": "SingleNodeObjectData"
+              }
+            ],
+            "ActionTag": 531902509,
+            "Size": {
+              "X": 60.0,
+              "Y": 20.0
+            },
+            "Name": "side",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "座位号",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 108.9001,
+              "Y": 402.1672
+            },
+            "Scale": {
+              "ScaleX": 0.9775,
+              "ScaleY": 2.3521
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1134,
+              "Y": 0.6284
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 78.9001,
+            "RightMargin": 821.0999,
+            "TopMargin": 227.8328,
+            "BottomMargin": 392.1672,
+            "Tag": 8,
+            "Children": [
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 227.4511,
+                  "Y": 403.9785
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 3.7909,
+                  "Y": 20.1989
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 227.4511,
+                "RightMargin": -167.4511,
+                "TopMargin": -383.9785,
+                "BottomMargin": 403.9785,
+                "Tag": 9,
+                "ActionTag": 2062249263,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "dropdownlist_position",
+                "ctype": "SingleNodeObjectData"
+              }
+            ],
+            "ActionTag": -1797521749,
+            "Size": {
+              "X": 60.0,
+              "Y": 20.0
+            },
+            "Name": "seat_number",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "扣分项",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 108.3989,
+              "Y": 334.6192
+            },
+            "Scale": {
+              "ScaleX": 0.9775,
+              "ScaleY": 2.3521
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1129,
+              "Y": 0.5228
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 78.3989,
+            "RightMargin": 821.6011,
+            "TopMargin": 295.3808,
+            "BottomMargin": 324.6192,
+            "Tag": 10,
+            "Children": [
+              {
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 228.1619,
+                  "Y": 336.0439
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": true,
+                "PrePosition": {
+                  "X": 3.8027,
+                  "Y": 16.8022
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 228.1619,
+                "RightMargin": -168.1619,
+                "TopMargin": -316.0439,
+                "BottomMargin": 336.0439,
+                "Tag": 11,
+                "ActionTag": -4927349,
+                "Size": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Name": "dropdownlist_position",
+                "ctype": "SingleNodeObjectData"
+              }
+            ],
+            "ActionTag": 472575803,
+            "Size": {
+              "X": 60.0,
+              "Y": 20.0
+            },
+            "Name": "punish_reason",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 11,
+            "ButtonText": "判罚确认",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 471.5517,
+              "Y": 450.2773
+            },
+            "Scale": {
+              "ScaleX": 2.3059,
+              "ScaleY": 1.6418
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4912,
+              "Y": 0.7036
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 448.5517,
+            "RightMargin": 465.4483,
+            "TopMargin": 171.7227,
+            "BottomMargin": 432.2773,
+            "Tag": 12,
+            "ActionTag": 144080321,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "1",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 432.6661,
+              "Y": 558.4749
+            },
+            "Scale": {
+              "ScaleX": 1.7,
+              "ScaleY": 3.5
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4507,
+              "Y": 0.8726
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 427.6661,
+            "RightMargin": 522.3339,
+            "TopMargin": 71.5251,
+            "BottomMargin": 548.4749,
+            "Tag": 45,
+            "ActionTag": -776738508,
+            "Size": {
+              "X": 10.0,
+              "Y": 20.0
+            },
+            "Name": "round",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 11,
+            "ButtonText": "退出",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 470.4535,
+              "Y": 353.3403
+            },
+            "Scale": {
+              "ScaleX": 2.3059,
+              "ScaleY": 1.6418
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4901,
+              "Y": 0.5521
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 447.4535,
+            "RightMargin": 466.5465,
+            "TopMargin": 268.6597,
+            "BottomMargin": 335.3403,
+            "Tag": 59,
+            "ActionTag": -147828957,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Button_2",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}

@@ -1,0 +1,27 @@
+Game=function(){
+	this.id;
+	this.baomingrenshu;
+	this.cansairenshu;
+	this.cansaixuanshouList=[];
+	this.groupList=[];
+	this.judgeList=[];
+	this.totalRound;
+	this.changdishu;
+	this.koufenxiang=[];
+};
+Game.prototype.init=function(id,baomingrenshu,totalRound){
+	this.id=id;
+	this.baomingrenshu=baomingrenshu;
+	this.totalRound=totalRound;
+	this.changdishu=this.getchangdi(this.baomingrenshu);
+};
+Game.prototype.getchangdishu=function(renshu){
+	return Math.ceil(renshu/8)
+};
+Game.prototype.chongxinfenpei=function(renshu,playerList){
+	this.changdishu=this.getchangdi(renshu);
+	for(i=0;i<playerList.length;i++)
+		{
+		playerList[i].chouqian(this.groupList,this.changdishu*2);
+		}
+}

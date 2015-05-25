@@ -1,0 +1,272 @@
+{
+  "ID": "01c81c66-41a9-484e-9a11-357b99b8d159",
+  "Version": "2.2.6.0",
+  "Name": "login",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 11,
+        "Children": [
+          {
+            "FontSize": 20,
+            "LabelText": "钓鱼比赛系统",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 483.6953,
+              "Y": 483.6956
+            },
+            "Scale": {
+              "ScaleX": 3.9046,
+              "ScaleY": 6.1693
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5038,
+              "Y": 0.7558
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 423.6953,
+            "RightMargin": 416.3047,
+            "TopMargin": 146.3044,
+            "BottomMargin": 473.6956,
+            "Tag": 12,
+            "ActionTag": -1858059699,
+            "Size": {
+              "X": 120.0,
+              "Y": 20.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "请裁判员登录使用本系统",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 467.5498,
+              "Y": 329.4082
+            },
+            "Scale": {
+              "ScaleX": 1.6438,
+              "ScaleY": 4.7377
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.487,
+              "Y": 0.5147
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 357.5498,
+            "RightMargin": 382.4502,
+            "TopMargin": 300.5918,
+            "BottomMargin": 319.4082,
+            "Tag": 55,
+            "ActionTag": 643291494,
+            "Size": {
+              "X": 220.0,
+              "Y": 20.0
+            },
+            "Name": "Text_4",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "登录",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 608.5519,
+              "Y": 215.5392
+            },
+            "Scale": {
+              "ScaleX": 1.531,
+              "ScaleY": 1.0929
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6339,
+              "Y": 0.3368
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 585.5519,
+            "RightMargin": 328.4481,
+            "TopMargin": 406.4608,
+            "BottomMargin": 197.5392,
+            "Tag": 56,
+            "ActionTag": -2100376387,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "AnchorPoint": {},
+            "Position": {
+              "X": 490.5,
+              "Y": 214.5
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5109,
+              "Y": 0.3352
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 490.5,
+            "RightMargin": 469.5,
+            "TopMargin": 425.5,
+            "BottomMargin": 214.5,
+            "Tag": 38,
+            "ActionTag": 292221715,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "dropdownlist_position",
+            "ctype": "SingleNodeObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "请选择比赛",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 362.5,
+              "Y": 218.5
+            },
+            "Scale": {
+              "ScaleX": 1.1,
+              "ScaleY": 1.9
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3776,
+              "Y": 0.3414
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 312.5,
+            "RightMargin": 547.5,
+            "TopMargin": 411.5,
+            "BottomMargin": 208.5,
+            "Tag": 42,
+            "ActionTag": 1825583489,
+            "Size": {
+              "X": 100.0,
+              "Y": 20.0
+            },
+            "Name": "gameselect",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Scene"
+}
