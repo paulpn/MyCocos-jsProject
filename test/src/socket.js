@@ -1,39 +1,44 @@
-var soc=cc.Node.extend({
-	_wsiSendText:null,
-	ctor:function(){
-		this._super();
-		this._wsiSendText = new WebSocket("ws://echo.websocket.org");
-		this._wsiSendText.onopen=function(evt) {
-			cc.log("Send Text WS was opened.");
-		};
-		this._wsiSendText.onmessage=function(evt) {
-			//var textStr = "response text msg: "+evt.data+", "+this.sendTextTimes;
-			cc.log("get");
-		};
-		this._wsiSendText.onerror =function(evt) {
-			cc.log("sendText Error was fired");
-		};
-		this._wsiSendText.onclose =function(evt) {
-			cc.log("_wsiSendText websocket instance closed.");
-		};
+var _sioClient;
+tag=0;
+socket=function()
+{
+	this._sioClient;
+	this.SocketIO = SocketIO || io;
+}
+socket.prototype.init=function(){
+	this._sioClient=this.SocketIO.connect("http://localhost:3000/");
+	_sioClient=this._sioClient;
+	this._sioClient.on("connect",function(){
+		_sioClient.emit("QuieryInitGameData","{}");
+
+	});
+	this._sioClient.on("GetInitGameData",function(data){
+		var jsonObj=JSON.parse(data);
+		var arg=jsonObj['args'];
+		var arg_arg=arg[0];
+		for(var i in arg_arg)
+		NAME_GAMEOFTODAY[i]=arg_arg[i]['name'];
+		cc.director.runScene(new LoginScene());
+		//if(_sioClient != null)_sioClient.disconnect();
+	});
+}
+socket.prototype.checkjudgesID=function(id){
+	
+	//this._sioClient=this.SocketIO.connect("http://localhost:3000/");
+	_sioClient=this._sioClient;
+	_sioClient.emit("CheckJudgesID",id);
+	//this._sioClient.on("connect",function(){
 		
-	},
-	clicksendmessage:function(){
-		if (this._wsiSendText.readyState == WebSocket.OPEN)
-		{
-			this._sendTextStatus.setString("Send Text WS is waiting...");
-			this._wsiSendText.send("Hello WebSocket中文, I'm a text message.");
-		}
+	//});
+	_sioClient.on("GetResult",function(data){
+		var jsonObj=JSON.parse(data);
+		var arg=jsonObj['args'];
+		tag=1;
+		/*if(arg=='1')
+			cc.director.pushScene(new MainMenuScene());
 		else
 		{
-			var warningStr = "send text websocket instance wasn't ready...";
-			cc.log(warningStr);
-
-		}
-	}
-
-	
-
-
-	
-});
+			cc.director.popScene();
+		}*/
+	});
+}

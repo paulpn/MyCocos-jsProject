@@ -55,7 +55,6 @@ cc.game.onStart = function(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
     	init();
-    	cc.director.runScene(new LoginScene());
     	
     }, this);
 };
@@ -63,8 +62,8 @@ function init(){
 	USERID=null;
 	USERNAME="李明";
 	NAME_GAMEOFTODAY=[];
-	NAME_GAMEOFTODAY[0]="Game1";
-	NAME_GAMEOFTODAY[1]="Game2";
+	//NAME_GAMEOFTODAY[0]="Game1";
+	//NAME_GAMEOFTODAY[1]="Game2";
 	ID_GAMEOFTODAY=[];
 	ID_GAMEOFTODAY[0]="1";
 	ID_GAMEOFTODAY[1]="2";
@@ -82,6 +81,8 @@ function init(){
 	for (var i=0;i<PUNISGMENTSCONFER.length;i++) {
 		PUNISGMENTS.push(PUNISGMENTSCONFER[i].itemname);
 	}*/
+	asocket=new socket();
+	asocket.init();
 }
 function getPlayerByID(id){
 	var p=new Player();

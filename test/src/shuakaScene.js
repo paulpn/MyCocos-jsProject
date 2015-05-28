@@ -65,17 +65,10 @@ var ShuakaSceneLayer=cc.Layer.extend({
 	},
 	gotomainmenuscene:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN){
-			if(this.loginCheck(this.info))
-				cc.director.pushScene(new MainMenuScene());
-			else
-			{
-				//this.scheduleOnce(this.gotologinscene(), 2);
-				//this.runAction(cc.Sequence.create( cc.DelayTime.create(3), cc.CallFunc.create(function () {
-				//	this.print;
-				//})));
-				this.scheduleOnce(function(){cc.director.popScene();}, 3);
-
-			}
+			r=asocket.checkjudgesID(this.info);
+			cc.log("ggggggggggggggggg");
+			setTimeout(function(){if(tag==1)cc.log("ggggggggggggggggg");else cc.log("aaaaaaaaa")},0);
+			
 		}
 		
 	},
@@ -87,14 +80,7 @@ var ShuakaSceneLayer=cc.Layer.extend({
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		cc.director.popScene();
 	},
-	loginCheck:function(id){
-		if(id=="1001"||id=="1002")//测试用，目前假定只有1001和1002是裁判
-			{
-			USERID=id;
-			return true;
-			}
-		return false;
-	},
+	
 	getInfo:function(){
 		if(this.info==null)
 			{
