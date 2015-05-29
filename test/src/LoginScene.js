@@ -14,9 +14,18 @@ var LoginSceneLayer=cc.Layer.extend({
 	shuaka:function(sender,type){
 		
 		GL.ShuaKa=GL.ShuaKa_ENUM.Login;
+		
 		if(type==ccui.Widget.TOUCH_BEGAN)
 			{
 			CURRENTGAME=this.gamename_drop.value;
+			for(var i in NAME_GAMEOFTODAY)
+				{
+					if(CURRENTGAME==NAME_GAMEOFTODAY[i])
+						{
+							ID_CURRENTGAME=ID_GAMEOFTODAY[i];
+							cc.log("当前比赛id为%s",ID_CURRENTGAME);
+						}
+				}
 			cc.director.pushScene(new ShuakaScene());
 			}
 	}

@@ -35,9 +35,10 @@ var MainMenuLayer = cc.Layer.extend({
         var bt4 = ccui.helper.seekWidgetByName(menu_scene.node, "Button_4");
         bt4.addTouchEventListener(this.GameStart,this);
         var p1=new Player("chen","1001");
-        var bt4 = ccui.helper.seekWidgetByName(menu_scene.node, "Button_5");
-        bt4.addTouchEventListener(this.clicksendmessage,this);
-        
+        var bt5 = ccui.helper.seekWidgetByName(menu_scene.node, "Button_5");
+        bt5.addTouchEventListener(this.clicksendmessage,this);
+        var bt6 = ccui.helper.seekWidgetByName(menu_scene.node, "Button_6");
+        bt6.addTouchEventListener(this.logout,this);
         //为bt注册一个触碰事件监听者，当监听到bt被触碰，则执行自定义函数buttonTouchEvent（）
         //bt.addTouchEventListener(this.prints());
        /* var bt=new cc.MenuItemImage("res/4.png","res/4.png",this.onclick,this);
@@ -105,6 +106,12 @@ var MainMenuLayer = cc.Layer.extend({
     {
     	if(type==ccui.Widget.TOUCH_BEGAN){
     		cc.director.pushScene(new JudgeScene());
+    	}	
+    },
+    logout:function(sender,type)
+    {
+    	if(type==ccui.Widget.TOUCH_BEGAN){
+    		cc.director.pushScene(new LoginScene());
     	}	
     },
     update:function () {

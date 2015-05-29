@@ -55,15 +55,14 @@ cc.game.onStart = function(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
     	init();
-    	
+    	setTimeout(function(){cc.director.runScene(new LoginScene());},1000);
     }, this);
 };
 function init(){
 	USERID=null;
-	USERNAME="李明";
+	USERNAME=null;
 	NAME_GAMEOFTODAY=[];
-	//NAME_GAMEOFTODAY[0]="Game1";
-	//NAME_GAMEOFTODAY[1]="Game2";
+	
 	ID_GAMEOFTODAY=[];
 	ID_GAMEOFTODAY[0]="1";
 	ID_GAMEOFTODAY[1]="2";

@@ -38,12 +38,11 @@ var droplist=cc.Sprite.extend({
 	dataSource:null,
 	value:null,
 	selectedText:null,
-	va:"asd",
 	ctor:function(aTexture,dataSource_arry){//下拉列表中的数据项数
 		dataSource=dataSource_arry;
-		value=dataSource_arry[0];
+		this.value=dataSource_arry[0];
 		this._super(aTexture);
-		this.selectedText= new cc.LabelTTF(value, "宋体", 20);
+		this.selectedText= new cc.LabelTTF(this.value, "宋体", 20);
 		this.selectedText.setPosition(this._getWidth()/2,this._getHeight()/2);
 		this.selectedText.setColor(cc.color(0, 0, 0));
 		this.selectedText.setName("value");//起名

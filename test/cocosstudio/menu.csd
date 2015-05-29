@@ -136,6 +136,21 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
+          <AbstractNodeData Name="Button_6" ActionTag="47654082" Tag="18" IconVisible="False" LeftMargin="873.6095" RightMargin="40.3905" TopMargin="36.4896" BottomMargin="567.5104" TouchEnable="True" FontSize="14" ButtonText="登出" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
+            <Size X="46.0000" Y="36.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="896.6095" Y="585.5104" />
+            <Scale ScaleX="1.8774" ScaleY="1.7207" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.9340" Y="0.9149" />
+            <PreSize />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

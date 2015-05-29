@@ -65,9 +65,13 @@ var ShuakaSceneLayer=cc.Layer.extend({
 	},
 	gotomainmenuscene:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN){
-			r=asocket.checkjudgesID(this.info);
-			cc.log("ggggggggggggggggg");
-			setTimeout(function(){if(tag==1)cc.log("ggggggggggggggggg");else cc.log("aaaaaaaaa")},0);
+			asocket.checkjudgesID(this.info);
+			setTimeout(function(){
+				if(socketReturnValue==true)
+					cc.director.pushScene(new MainMenuScene());
+				else
+					cc.director.popScene();
+			},1000);
 			
 		}
 		
@@ -84,7 +88,7 @@ var ShuakaSceneLayer=cc.Layer.extend({
 	getInfo:function(){
 		if(this.info==null)
 			{
-			this.info="1002";
+			this.info="1001";
 			cc.log("getINFO");
 			}
 	},
