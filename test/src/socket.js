@@ -10,6 +10,7 @@ socket.prototype.init=function(){
 	_sioClient=this._sioClient;
 	this._sioClient.on("connect",function(){
 		_sioClient.emit("QuieryInitGameData","{}");
+		_sioClient.emit("QuieryPunishrules","{}");
 
 	});
 	this._sioClient.on("GetInitGameData",function(data){
@@ -21,6 +22,14 @@ socket.prototype.init=function(){
 			NAME_GAMEOFTODAY[i]=arg[0][i]['name'];
 		}
 		//if(_sioClient != null)_sioClient.disconnect();
+	});
+	this._sioClient.on("GetPunishRules",function(data){
+		var jsonObj=JSON.parse(data);
+		var arg=jsonObj['args'];
+		for(var i in arg[0])
+		{
+			PUNISHMENTS[i]=arg[0][i]['content'];
+		}
 	});
 }
 socket.prototype.checkjudgesID=function(id){
@@ -39,4 +48,8 @@ socket.prototype.checkjudgesID=function(id){
 		else
 			socketReturnValue=false;
 	});
+
+}
+socket.prototype.punishment=function(data){
+	this._sioClient.emit("GetAPunishment",data);
 }

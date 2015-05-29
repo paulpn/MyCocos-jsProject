@@ -69,11 +69,11 @@ function init(){
 	ID_CURRENTGAME=ID_GAMEOFTODAY[0];
 	GAMESTARTTIME=new Date(2016,6,1);//测试用
 	CURRENTROUND=1;
-	PUNISGMENTS=[];
-	PUNISGMENTS[0]="扣分项1";
-	PUNISGMENTS[1]="扣分项2";
-	PUNISGMENTS[2]="扣分项3";
-	PUNISGMENTS[3]="扣分项4";
+	PUNISHMENTS=[];
+	//PUNISHMENTS[0]="扣分项1";
+	//PUNISHMENTS[1]="扣分项2";
+	//PUNISHMENTS[2]="扣分项3";
+	//PUNISHMENTS[3]="扣分项4";
 	/*PUNISGMENTSCONFER=[{itemname:"扣分项1",score:1},{itemname:"扣分项2",score:2},{itemname:"扣分项3",score:3},{itemname:"扣分项4",score:4}
 	];
 	PUNISGMENTS=[];
