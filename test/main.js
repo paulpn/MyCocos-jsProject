@@ -55,31 +55,26 @@ cc.game.onStart = function(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
     	init();
-    	setTimeout(function(){cc.director.runScene(new LoginScene());},1000);
+    	setTimeout(function(){cc.director.runScene(new LoginScene());},2000);
     }, this);
 };
 function init(){
 	USERID=null;
 	USERNAME=null;
 	NAME_GAMEOFTODAY=[];
-	
+	ID_PLAYEROFTHISGAME=[];
+	ID_PLAYEROFTHISGAME[0]='2';
+	ID_PLAYEROFTHISGAME[1]='1111';
+	ID_PLAYEROFTHISGAME[2]='3';
+	PLAYERS=[];
+	APLAYER=null;
 	ID_GAMEOFTODAY=[];
 	ID_GAMEOFTODAY[0]="1";
-	ID_GAMEOFTODAY[1]="2";
-	ID_CURRENTGAME=ID_GAMEOFTODAY[0];
+	//ID_GAMEOFTODAY[1]="2";
+	//ID_CURRENTGAME=ID_GAMEOFTODAY[0];
 	GAMESTARTTIME=new Date(2016,6,1);//测试用
 	CURRENTROUND=1;
 	PUNISHMENTS=[];
-	//PUNISHMENTS[0]="扣分项1";
-	//PUNISHMENTS[1]="扣分项2";
-	//PUNISHMENTS[2]="扣分项3";
-	//PUNISHMENTS[3]="扣分项4";
-	/*PUNISGMENTSCONFER=[{itemname:"扣分项1",score:1},{itemname:"扣分项2",score:2},{itemname:"扣分项3",score:3},{itemname:"扣分项4",score:4}
-	];
-	PUNISGMENTS=[];
-	for (var i=0;i<PUNISGMENTSCONFER.length;i++) {
-		PUNISGMENTS.push(PUNISGMENTSCONFER[i].itemname);
-	}*/
 	asocket=new socket();
 	asocket.init();
 }

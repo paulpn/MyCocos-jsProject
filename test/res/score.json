@@ -538,7 +538,7 @@
               "X": 46.0,
               "Y": 36.0
             },
-            "Name": "Button_2",
+            "Name": "Button_3",
             "ctype": "ButtonObjectData"
           },
           {
@@ -583,27 +583,27 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 511.7709,
-              "Y": 77.8198
+              "X": 337.8999,
+              "Y": 92.6177
             },
             "Scale": {
-              "ScaleX": 3.0527,
-              "ScaleY": 2.3115
+              "ScaleX": 3.0,
+              "ScaleY": 2.3
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5331,
-              "Y": 0.1216
+              "X": 0.352,
+              "Y": 0.1447
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 488.7709,
-            "RightMargin": 425.2291,
-            "TopMargin": 544.1802,
-            "BottomMargin": 59.8198,
+            "LeftMargin": 314.8999,
+            "RightMargin": 599.1001,
+            "TopMargin": 529.3823,
+            "BottomMargin": 74.6177,
             "Tag": 45,
             "ActionTag": 880670352,
             "Size": {
@@ -701,6 +701,78 @@
             },
             "Name": "TextField_1",
             "ctype": "TextFieldObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "退出",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 649.1941,
+              "Y": 91.9864
+            },
+            "Scale": {
+              "ScaleX": 3.0,
+              "ScaleY": 2.3
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.6762,
+              "Y": 0.1437
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 626.1941,
+            "RightMargin": 287.8059,
+            "TopMargin": 530.0136,
+            "BottomMargin": 73.9864,
+            "Tag": 22,
+            "ActionTag": 379477527,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Name": "Button_2",
+            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {

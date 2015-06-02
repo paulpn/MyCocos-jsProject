@@ -6,11 +6,27 @@ socket=function()
 	this.SocketIO = SocketIO || io;
 }
 socket.prototype.init=function(){
-	this._sioClient=this.SocketIO.connect("http://192.168.1.133:3000/");
+	this._sioClient=this.SocketIO.connect("http://localhost:3000/");
 	_sioClient=this._sioClient;
 	this._sioClient.on("connect",function(){
 		_sioClient.emit("QuieryInitGameData","{}");
 		_sioClient.emit("QuieryPunishrules","{}");
+		var tmp={};
+		tmp.args=ID_PLAYEROFTHISGAME;
+		var s=JSON.stringify(tmp);
+		_sioClient.emit("QuieryPlayerInfo",s);
+		
+		/*for(var i in ID_PLAYEROFTHISGAME)
+			{
+			PLAYERS[i]=new Player();
+			PLAYERS[i].id=ID_PLAYEROFTHISGAME[i];
+			_sioClient.emit("QuieryPlayerInfo",ID_PLAYEROFTHISGAME[i]);
+			setTimeout(function(){
+				PLAYERS[i].name=socketReturnValue;
+				cc.log("%s",PLAYERS[i].name);},1000);
+
+			}*/
+		
 
 	});
 	this._sioClient.on("GetInitGameData",function(data){
@@ -31,6 +47,21 @@ socket.prototype.init=function(){
 			PUNISHMENTS[i]=arg[0][i]['content'];
 		}
 	});
+	this._sioClient.on("GetPlayerInfo",function(data){
+		var jsonObj=JSON.parse(data);
+		var arg=jsonObj['args'];
+		for(var i in ID_PLAYEROFTHISGAME)
+			{
+			PLAYERS[i]=new Player();
+			PLAYERS[i].id=ID_PLAYEROFTHISGAME[i];
+			PLAYERS[i].name=arg[0][i]['name'];
+			cc.log("%s",PLAYERS[i].name);
+			}
+		
+		//socketReturnValue=arg[0][0]['name'];
+		
+	});
+	
 }
 socket.prototype.checkjudgesID=function(id){
 	this._sioClient.emit("CheckJudgesID",id);
@@ -51,5 +82,15 @@ socket.prototype.checkjudgesID=function(id){
 
 }
 socket.prototype.punishment=function(data){
+	
 	this._sioClient.emit("GetAPunishment",data);
+}
+socket.prototype.caculateScore=function(scoreRecord){
+	this._sioClient.emit("RecordScore",scoreRecord);
+}
+socket.prototype.getPlayerInfo=function(id){
+	/*this._sioClient.emit("QuieryPlayerInfo",id);*/
+	this._sioClient.on("GetPlayerInfo",function(data){
+		cc.log("ttttttttttt");
+	});
 }

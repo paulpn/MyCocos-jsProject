@@ -59,8 +59,20 @@ var ShuakaSceneLayer=cc.Layer.extend({
 	gototongjiscene:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		{
-			id="1111";
-			cc.director.pushScene(new ScoreScene(id));
+			id="3";
+			for(var i in PLAYERS)
+				{
+				cc.log("%s",PLAYERS[i].id);
+				if(PLAYERS[i].id==id)
+					{
+					APLAYER=PLAYERS[i];
+						cc.director.pushScene(new ScoreScene());
+						return;
+					}
+				}
+			cc.log("wrong!!!!");
+			cc.director.popScene();
+			
 		}
 	},
 	gotomainmenuscene:function(sender,type){

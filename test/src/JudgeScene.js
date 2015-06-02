@@ -40,13 +40,14 @@ JudgeLayer=cc.Layer.extend({
 		if(type==ccui.Widget.TOUCH_BEGAN)
 			{
 			//var p="{\"side\":\""+this.sides_drop.value+"\",\"seats\":\""+this.seats_drop.value+"\",\"punish\":\""+this.punishments_drop.value+"\"}";
+			//asocket.punishment(p);
 			var p={};
 			p.side=this.sides_drop.value;
 			p.seats=this.seats_drop.value;
 			p.punish=this.punishments_drop.value;
-				//var p="\"Hello!!!!!!!!\"";
-			asocket.punishment("\""+p+"\"");
-			//cc.director.pushScene(new MainMenuScene());
+			var s=JSON.stringify(p);
+			asocket.punishment(s);
+			cc.director.pushScene(new MainMenuScene());
 			}
 	},
 	exit:function(sender,type){

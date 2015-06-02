@@ -115,7 +115,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_2" ActionTag="-1357492552" Tag="44" IconVisible="False" LeftMargin="668.0210" RightMargin="245.9790" TopMargin="333.7102" BottomMargin="270.2898" TouchEnable="True" FontSize="9" ButtonText="查看扣分项" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_3" ActionTag="-1357492552" Tag="44" IconVisible="False" LeftMargin="668.0210" RightMargin="245.9790" TopMargin="333.7102" BottomMargin="270.2898" TouchEnable="True" FontSize="9" ButtonText="查看扣分项" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
             <Size X="46.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="691.0210" Y="288.2898" />
@@ -130,13 +130,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_1" ActionTag="880670352" Tag="45" IconVisible="False" LeftMargin="488.7709" RightMargin="425.2291" TopMargin="544.1802" BottomMargin="59.8198" TouchEnable="True" FontSize="12" ButtonText="刷卡确认" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_1" ActionTag="880670352" Tag="45" IconVisible="False" LeftMargin="314.8999" RightMargin="599.1001" TopMargin="529.3823" BottomMargin="74.6177" TouchEnable="True" FontSize="12" ButtonText="刷卡确认" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
             <Size X="46.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="511.7709" Y="77.8198" />
-            <Scale ScaleX="3.0527" ScaleY="2.3115" />
+            <Position X="337.8999" Y="92.6177" />
+            <Scale ScaleX="3.0000" ScaleY="2.3000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5331" Y="0.1216" />
+            <PrePosition X="0.3520" Y="0.1447" />
             <PreSize />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
@@ -163,6 +163,21 @@
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.5617" Y="0.5630" />
             <PreSize />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Button_2" ActionTag="379477527" Tag="22" IconVisible="False" LeftMargin="626.1941" RightMargin="287.8059" TopMargin="530.0136" BottomMargin="73.9864" TouchEnable="True" FontSize="14" ButtonText="退出" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="ButtonObjectData">
+            <Size X="46.0000" Y="36.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="649.1941" Y="91.9864" />
+            <Scale ScaleX="3.0000" ScaleY="2.3000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.6762" Y="0.1437" />
+            <PreSize />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

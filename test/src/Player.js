@@ -24,18 +24,3 @@ Player.prototype.init=function(info){
 	
 };
 
-function getPlayerByID(id){
-	var p=new Player();
-	p.id=id;
-	p.name="小王";
-	p.groupNumber=1;
-	p.seatNumber=3;
-	return p;
-}
-function getPunishmentListByID(id){
-	var list=[];
-	list[0]=PUNISGMENTS[0];
-	list[1]=PUNISGMENTS[1];
-	list[2]=PUNISGMENTS[2];
-	return list;
-}
