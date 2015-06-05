@@ -1,6 +1,8 @@
 var LoginSceneLayer=cc.Layer.extend({
 	gamename_drop:null,
 	ctor:function () {
+		USERID=null;
+		USERNAME=null;
 		this._super();
 		var Login_Scene=ccs.load(res.Login_json);
 		this.addChild(Login_Scene.node);
@@ -26,6 +28,7 @@ var LoginSceneLayer=cc.Layer.extend({
 							cc.log("当前比赛id为%s",ID_CURRENTGAME);
 						}
 				}
+			
 			cc.director.pushScene(new ShuakaScene());
 			}
 	}

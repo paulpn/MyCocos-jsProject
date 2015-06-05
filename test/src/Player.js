@@ -4,6 +4,7 @@ Player=function()
 	this.name;
 	this.groupNumber;
 	this.seatNumber;
+	this.changdiNumber;
 	this.scoreOfThisRound;
 	this.totalScore;
 	this.scoreOfThisRound;

@@ -164,7 +164,7 @@
           },
           {
             "FontSize": 14,
-            "ButtonText": "取消",
+            "ButtonText": "退出",
             "TextColor": {
               "R": 65,
               "G": 65,
@@ -233,6 +233,95 @@
             },
             "Name": "Button_2",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "editbox.png",
+              "Plist": ""
+            },
+            "Scale9Width": 273,
+            "Scale9Height": 36,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 472.9732,
+              "Y": 513.9288
+            },
+            "Scale": {
+              "ScaleX": 1.3578,
+              "ScaleY": 2.8304
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4927,
+              "Y": 0.803
+            },
+            "PreSize": {
+              "X": 0.2844,
+              "Y": 0.0562
+            },
+            "LeftMargin": 336.4732,
+            "RightMargin": 350.5268,
+            "TopMargin": 108.0712,
+            "BottomMargin": 495.9288,
+            "Tag": 30,
+            "ActionTag": 677852546,
+            "Size": {
+              "X": 273.0,
+              "Y": 36.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FontSize": 20,
+            "IsCustomSize": true,
+            "LabelText": "",
+            "PlaceHolderText": " ",
+            "MaxLengthText": 10,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 454.5852,
+              "Y": 509.8403
+            },
+            "Scale": {
+              "ScaleX": 3.0426,
+              "ScaleY": 3.5721
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4735,
+              "Y": 0.7966
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 404.5852,
+            "RightMargin": 455.4148,
+            "TopMargin": 116.6597,
+            "BottomMargin": 496.3403,
+            "Tag": 28,
+            "ActionTag": -107011408,
+            "Size": {
+              "X": 100.0,
+              "Y": 27.0
+            },
+            "Name": "TextField_1",
+            "ctype": "TextFieldObjectData"
           }
         ],
         "Size": {

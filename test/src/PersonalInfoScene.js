@@ -10,13 +10,11 @@ var PersonalInfoSceneLayer=cc.Layer.extend({
 	},
 	onEnter:function(){
 		this._super();
-		var p=getPlayerByID(this.getParent().id);
-		this.scene.node.getChildByName("name").setString(p.name);
-		this.scene.node.getChildByName("id").setString(p.id);
-		this.scene.node.getChildByName("seatnumber").setString(p.seatNumber);
-		var g=getGroupByNumber(p.groupNumber);
-		this.scene.node.getChildByName("groupnumber").setString(g.groupNumber);
-		this.scene.node.getChildByName("changdi").setString(g.changdiNumber);
+		this.scene.node.getChildByName("name").setString(APLAYER.name);
+		this.scene.node.getChildByName("id").setString(APLAYER.id)
+		this.scene.node.getChildByName("seatnumber").setString(APLAYER.seatNumber);
+		this.scene.node.getChildByName("groupnumber").setString(APLAYER.groupNumber);
+		this.scene.node.getChildByName("changdi").setString(APLAYER.changdiNumber);
 	},
 	queren:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN)

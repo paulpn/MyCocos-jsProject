@@ -1,65 +1,81 @@
 var ShuakaSceneLayer=cc.Layer.extend({
-	info:"1002",
+	tip:null,
+	tt:null,
 	ctor:function () {
 		this._super();
-		var Shuaka_Scene=ccs.load(res.Shuaka_json);
-		this.addChild(Shuaka_Scene.node);
-		var bt = ccui.helper.seekWidgetByName(Shuaka_Scene.node, "Button_1");
-		var cancelbt = ccui.helper.seekWidgetByName(Shuaka_Scene.node, "Button_2");
-		var tip_position=Shuaka_Scene.node.getChildByName("tip").getPosition();
-		tip = new cc.LabelTTF("", "宋体", 40);
-		tip.setPosition(tip_position.x,tip_position.y);
-		tip.setColor(cc.color(0, 0, 0));
-		this.addChild(tip);
-		this.info=null;
-		this.schedule(this.getInfo,0.5);
+		this.tt="ssssssssssssssssssssssssssssssssss";
+		this.Shuaka_Scene=ccs.load(res.Shuaka_json);
+		this.addChild(this.Shuaka_Scene.node);
+		var bt = ccui.helper.seekWidgetByName(this.Shuaka_Scene.node, "Button_1");
+		var cancelbt = ccui.helper.seekWidgetByName(this.Shuaka_Scene.node, "Button_2");
+		var tip_position=this.Shuaka_Scene.node.getChildByName("tip").getPosition();
+		this.tip = new cc.LabelTTF("", "宋体", 40);
+		this.tip.setPosition(tip_position.x,tip_position.y);
+		this.tip.setColor(cc.color(0, 0, 0));
+		this.addChild(this.tip);
 		switch(GL.ShuaKa)
 		{
 		case 0:
-			tip.setString("请刷卡检录");
+			this.tip.setString("请刷卡检录");
 			bt.addTouchEventListener(this.gotojianluscene,this);
 			cancelbt.addTouchEventListener(this.goback,this);
 			break;
 		case 1:
-			tip.setString("请刷卡查询");
+			this.tip.setString("请刷卡查询");
 			bt.addTouchEventListener(this.gotochaxunscene,this);
 			cancelbt.addTouchEventListener(this.goback,this);
 			break;
 		case 2:
-			tip.setString("请选手刷卡");
+			this.tip.setString("请选手刷卡");
 			bt.addTouchEventListener(this.gototongjiscene,this);
 			cancelbt.addTouchEventListener(this.goback,this);
 			break;
 		case 3:
-			tip.setString("请选手刷卡确认");
+			this.tip.setString("请选手刷卡确认");
 			bt.addTouchEventListener(this.queren,this);
 			cancelbt.addTouchEventListener(this.goback,this);
 			break;
 		case 4:
-			tip.setString("请刷卡登录");
+			this.tip.setString("请刷卡登录");
 			bt.addTouchEventListener(this.gotomainmenuscene,this);
 			cancelbt.addTouchEventListener(this.goback,this);
 			break;
 		}
 	},
 	gotojianluscene:function(sender,type){
+		var tip=this.tip;
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		{
-			id="1111";//测试用
-			cc.director.pushScene(new PersonalInfoScene(id));
+			var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
+			asocket.JianLu(id);
+			setTimeout(function(){
+				if(socketReturnValue==true)
+					cc.director.pushScene(new PersonalInfoScene(id));
+				else
+					tip.setString("该用户没有报名参加本次比赛");
+			},1000);
+			
 		}
 	},
 	gotochaxunscene:function(sender,type){
+		var tip=this.tip;
 		if(type==ccui.Widget.TOUCH_BEGAN)
 			{
-			id="1111";//测试用
-			cc.director.pushScene(new PersonalInfoScene(id));
+				var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
+				asocket.checkAPlayer(id);
+				setTimeout(function(){
+				if(socketReturnValue==true)
+					cc.director.pushScene(new PersonalInfoScene(id));
+				else
+					tip.setString("该用户没有报名参加本次比赛");
+				},1000);
 			}
 	},
 	gototongjiscene:function(sender,type){
+		var tip=this.tip;
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		{
-			id="3";
+			var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
 			for(var i in PLAYERS)
 				{
 				cc.log("%s",PLAYERS[i].id);
@@ -70,21 +86,23 @@ var ShuakaSceneLayer=cc.Layer.extend({
 						return;
 					}
 				}
-			cc.log("wrong!!!!");
-			cc.director.popScene();
-			
+			tip.setString("该用户没有报名参加本次比赛");
 		}
 	},
 	gotomainmenuscene:function(sender,type){
+		var tip=this.tip;
 		if(type==ccui.Widget.TOUCH_BEGAN){
-			asocket.checkjudgesID(this.info);
+			var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
+			asocket.checkjudgesID(id,ID_CURRENTGAME);
+			
 			setTimeout(function(){
 				if(socketReturnValue==true)
 					cc.director.pushScene(new MainMenuScene());
-				else
-					cc.director.popScene();
+				else{
+					tip.setString("该用户没有报名参加本次比赛");//setTime中似乎不能用this,所以使用tip代替this.tip	
+				}
+					
 			},1000);
-			
 		}
 		
 	},
@@ -96,14 +114,7 @@ var ShuakaSceneLayer=cc.Layer.extend({
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		cc.director.popScene();
 	},
-	
-	getInfo:function(){
-		if(this.info==null)
-			{
-			this.info="1001";
-			cc.log("getINFO");
-			}
-	},
+
 	print:function(s){
 		cc.log("%s",s);
 	}
