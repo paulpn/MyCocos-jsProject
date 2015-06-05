@@ -4,7 +4,6 @@ var MainMenuLayer = cc.Layer.extend({
     wsiSendText:null,
     ctor:function () {
         this._super();
-        asocket.getPlayerInfo();
         this._wsiSendText = new WebSocket("ws://echo.websocket.org");
         this._wsiSendText.onopen=function(evt) {
         	cc.log("Send Text WS was opened.");

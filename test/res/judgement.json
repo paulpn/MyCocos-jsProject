@@ -47,8 +47,8 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 424.1176,
-            "RightMargin": 435.8824,
+            "LeftMargin": 419.1176,
+            "RightMargin": 430.8824,
             "TopMargin": 71.2281,
             "BottomMargin": 548.7719,
             "Tag": 55,
@@ -377,7 +377,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "1",
+            "LabelText": "_",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -492,6 +492,98 @@
             },
             "Name": "Button_2",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "场地号",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 695.7243,
+              "Y": 561.4633
+            },
+            "Scale": {
+              "ScaleX": 1.4386,
+              "ScaleY": 2.8797
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7247,
+              "Y": 0.8773
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 665.7243,
+            "RightMargin": 234.2757,
+            "TopMargin": 68.5367,
+            "BottomMargin": 551.4633,
+            "Tag": 54,
+            "ActionTag": 207210401,
+            "Size": {
+              "X": 60.0,
+              "Y": 20.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "_______",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "G": 127,
+              "B": 80
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 801.0493,
+              "Y": 562.2019
+            },
+            "Scale": {
+              "ScaleX": 1.4386,
+              "ScaleY": 2.8797
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8344,
+              "Y": 0.8784
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 766.0493,
+            "RightMargin": 123.9507,
+            "TopMargin": 67.7981,
+            "BottomMargin": 552.2019,
+            "Tag": 60,
+            "ActionTag": 1456639052,
+            "Size": {
+              "X": 70.0,
+              "Y": 20.0
+            },
+            "Name": "Text_2",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {

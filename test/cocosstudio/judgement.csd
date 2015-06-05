@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" Tag="46" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Text_3" ActionTag="-781424172" Tag="55" IconVisible="False" LeftMargin="424.1176" RightMargin="435.8824" TopMargin="71.2281" BottomMargin="548.7719" FontSize="20" LabelText="第   场比赛" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3" ActionTag="-781424172" Tag="55" IconVisible="False" LeftMargin="419.1176" RightMargin="430.8824" TopMargin="71.2281" BottomMargin="548.7719" FontSize="20" LabelText="第   场比赛" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
             <Size X="110.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="474.1176" Y="558.7719" />
@@ -98,7 +98,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>
-          <AbstractNodeData Name="round" ActionTag="-776738508" Tag="45" IconVisible="False" LeftMargin="427.6661" RightMargin="522.3339" TopMargin="71.5251" BottomMargin="548.4749" FontSize="20" LabelText="1" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+          <AbstractNodeData Name="round" ActionTag="-776738508" Tag="45" IconVisible="False" LeftMargin="427.6661" RightMargin="522.3339" TopMargin="71.5251" BottomMargin="548.4749" FontSize="20" LabelText="_" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
             <Size X="10.0000" Y="20.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="432.6661" Y="558.4749" />
@@ -121,6 +121,28 @@
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
             <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_1" ActionTag="207210401" Tag="54" IconVisible="False" LeftMargin="665.7243" RightMargin="234.2757" TopMargin="68.5367" BottomMargin="551.4633" FontSize="20" LabelText="场地号" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+            <Size X="60.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="695.7243" Y="561.4633" />
+            <Scale ScaleX="1.4386" ScaleY="2.8797" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.7247" Y="0.8773" />
+            <PreSize />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="255" G="127" B="80" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_2" ActionTag="1456639052" Tag="60" IconVisible="False" LeftMargin="766.0493" RightMargin="123.9507" TopMargin="67.7981" BottomMargin="552.2019" FontSize="20" LabelText="_______" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+            <Size X="70.0000" Y="20.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="801.0493" Y="562.2019" />
+            <Scale ScaleX="1.4386" ScaleY="2.8797" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.8344" Y="0.8784" />
+            <PreSize />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="255" G="127" B="80" />
           </AbstractNodeData>

@@ -35,18 +35,14 @@ JudgeLayer=cc.Layer.extend({
 	onEnter:function(){
 		this._super();
 		this.scene.node.getChildByName("round").setString(CURRENTROUND);
+		this.scene.node.getChildByName("Text_2").setString(CHANGDI[CURRENTROUND-1]);
 	},
 	queren:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN)
 			{
 			//var p="{\"side\":\""+this.sides_drop.value+"\",\"seats\":\""+this.seats_drop.value+"\",\"punish\":\""+this.punishments_drop.value+"\"}";
 			//asocket.punishment(p);
-			var p={};
-			p.side=this.sides_drop.value;
-			p.seats=this.seats_drop.value;
-			p.punish=this.punishments_drop.value;
-			var s=JSON.stringify(p);
-			asocket.punishment(s);
+			asocket.punishment(this.sides_drop.number,this.seats_drop.number,this.punishments_drop.number);
 			cc.director.pushScene(new MainMenuScene());
 			}
 	},

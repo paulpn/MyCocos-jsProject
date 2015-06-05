@@ -1,6 +1,7 @@
 
 var droplist_Item=cc.Sprite.extend({
 	data:null,
+	number:null,
 	ctor:function(aTexture){
 		this._super(aTexture);
 		cc.eventManager.addListener({
@@ -26,7 +27,8 @@ var droplist_Item=cc.Sprite.extend({
 	},
 	getData:function()//将选中的值作为下拉列表的值
 	{
-		this.getParent().getParent().setSelectData(this.data);//使用自定义方法setSelectData，同时改变实际值和显示的值
+		cc.log("dddddddddddddddthis.number的值为%s",this.number);
+		this.getParent().getParent().setSelectData(this.data,this.number);//使用自定义方法setSelectData，同时改变实际值和显示的值
 		cc.log("%s",this.getParent().getParent().value);
 		
 	}
@@ -38,6 +40,7 @@ var droplist=cc.Sprite.extend({
 	dataSource:null,
 	value:null,
 	selectedText:null,
+	number:1,
 	ctor:function(aTexture,dataSource_arry){//下拉列表中的数据项数
 		dataSource=dataSource_arry;
 		this.value=dataSource_arry[0];
@@ -53,6 +56,7 @@ var droplist=cc.Sprite.extend({
 		for(i=1;i<=dataSource.length;i++)
 		{
 			var item=new droplist_Item("res/blank.png");
+			item.number=i;
 			item.setAnchorPoint(0, 0);
 			this.item_h=item._getHeight();
 			this.item_w=item._getWidth();
@@ -94,9 +98,10 @@ var droplist=cc.Sprite.extend({
 		
 		return false;
 	},
-	setSelectData:function(data)
+	setSelectData:function(data,number)
 	{
 		this.value=data;
+		this.number=number;
 		this.selectedText.setString(data);
 	}
 

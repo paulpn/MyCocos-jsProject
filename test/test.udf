@@ -27,5 +27,19 @@
         <LastRunType Value="Unknown" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="login.csd" />
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="menu.csd" />
+          <FilePathData Path="score.csd" />
+          <FilePathData Path="shuaka.csd" />
+          <FilePathData Path="personal_info.csd" />
+          <FilePathData Path="judgement.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="judgement.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

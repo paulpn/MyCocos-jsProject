@@ -3,7 +3,6 @@ var ShuakaSceneLayer=cc.Layer.extend({
 	tt:null,
 	ctor:function () {
 		this._super();
-		this.tt="ssssssssssssssssssssssssssssssssss";
 		this.Shuaka_Scene=ccs.load(res.Shuaka_json);
 		this.addChild(this.Shuaka_Scene.node);
 		var bt = ccui.helper.seekWidgetByName(this.Shuaka_Scene.node, "Button_1");
@@ -76,17 +75,13 @@ var ShuakaSceneLayer=cc.Layer.extend({
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		{
 			var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
-			for(var i in PLAYERS)
-				{
-				cc.log("%s",PLAYERS[i].id);
-				if(PLAYERS[i].id==id)
-					{
-					APLAYER=PLAYERS[i];
-						cc.director.pushScene(new ScoreScene());
-						return;
-					}
-				}
-			tip.setString("该用户没有报名参加本次比赛");
+			asocket.checkAPlayer(id);
+			setTimeout(function(){
+				if(socketReturnValue==true)
+					cc.director.pushScene(new ScoreScene());
+				else
+					tip.setString("该用户没有报名参加本次比赛");
+			},1000);
 		}
 	},
 	gotomainmenuscene:function(sender,type){
@@ -94,10 +89,13 @@ var ShuakaSceneLayer=cc.Layer.extend({
 		if(type==ccui.Widget.TOUCH_BEGAN){
 			var id=this.Shuaka_Scene.node.getChildByName("TextField_1").getString();
 			asocket.checkjudgesID(id,ID_CURRENTGAME);
-			
 			setTimeout(function(){
 				if(socketReturnValue==true)
+					{
+					asocket.getPlayerInfo();
 					cc.director.pushScene(new MainMenuScene());
+					}
+					
 				else{
 					tip.setString("该用户没有报名参加本次比赛");//setTime中似乎不能用this,所以使用tip代替this.tip	
 				}

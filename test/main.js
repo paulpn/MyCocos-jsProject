@@ -61,6 +61,7 @@ cc.game.onStart = function(){
 function init(){
 	USERID=null;
 	USERNAME=null;
+	CHANGDI=[];
 	NAME_GAMEOFTODAY=[];
 	PLAYERS=[];
 	APLAYER=null;

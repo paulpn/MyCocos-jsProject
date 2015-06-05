@@ -18,8 +18,7 @@ var ScoreSceneLayer=cc.Layer.extend({
 	queren:function(sender,type){
 		if(type==ccui.Widget.TOUCH_BEGAN)
 		{
-			this.text=this.scene.node.getChildByName("TextField_1");
-			cc.log("%s",this.text.getString());
+			var id=this.scene.node.getChildByName("TextField_1");
 			var s="{\"id\":\""+APLAYER.id+"\",\"id_game\":\""+ID_CURRENTGAME+"\",\"score\":"+this.text.getString()+"}";
 			asocket.caculateScore(s);
 			setTimeout(function(){cc.director.pushScene(new MainMenuScene())},1000);

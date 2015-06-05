@@ -72,11 +72,15 @@ socket.prototype.checkjudgesID=function(judge_id,game_id){
 	this._sioClient.on("GetResult",function(data){
 		var jsonObj=JSON.parse(data);
 		var arg=jsonObj['args'];
-		if(arg[0]=='1')
+		if(arg[0]!='0')
 			{
 			USERID=judge_id;
 			USERNAME=arg[1][0]["name"];
 			cc.log("%s",USERNAME);
+			for(var i in arg[1])
+				{
+				CHANGDI[i]=arg[1][i]["changdi"];
+				}
 			socketReturnValue=true;
 			}
 			
@@ -85,9 +89,17 @@ socket.prototype.checkjudgesID=function(judge_id,game_id){
 	});
 
 }
-socket.prototype.punishment=function(data){
-	
-	this._sioClient.emit("GetAPunishment",data);
+socket.prototype.punishment=function(side,seat,punishment){
+	var json={};
+	json.side=side;
+	json.seat=seat;
+	json.game_id=ID_CURRENTGAME;
+	json.round=CURRENTROUND;
+	json.judge_id=USERID;
+	json.punishment=punishment;
+	json.changdi=CHANGDI[CURRENTROUND-1];
+	var s=JSON.stringify(json);
+	this._sioClient.emit("GetAPunishment",s);
 }
 socket.prototype.caculateScore=function(scoreRecord){
 	this._sioClient.emit("RecordScore",scoreRecord);
@@ -132,7 +144,7 @@ socket.prototype.JianLu=function(id){
 	var json={};
 	json.id=id;
 	json.game_id=ID_CURRENTGAME;
-	json.round=1;
+	json.round=CURRENTROUND;
 	var s=JSON.stringify(json);
 	this._sioClient.emit("JianLu",s);
 	this._sioClient.on("JianLuResult",function(data){
